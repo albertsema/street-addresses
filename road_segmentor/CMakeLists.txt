@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 2.8)
 
 PROJECT(RoadConnectionLabelling)
 
-FIND_PACKAGE( OpenCV REQUIRED )
+FIND_PACKAGE( OpenCV HINTS /usr/local/include/opencv4/opencv2 )
 
 # Requires OpenCV v2.4.1 or later
 IF (${OpenCV_VERSION} VERSION_LESS 2.4.1)
